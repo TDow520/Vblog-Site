@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 
+.animate-x-to-close .bar:first-of-type{
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.animate-x-to-close .bar:last-of-type{
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.animate-x-to-close .bar:nth-of-type(2){
+  opacity: 0;
+}
+
 /* 
 #root {
   width: 100%;
