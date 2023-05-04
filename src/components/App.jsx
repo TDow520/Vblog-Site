@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/App.css";
 import Home from "./Homepage/home.jsx";
-import VideoLib from "../vid_lib.jsx";
+import VideoLib from "./Library_page/vid_lib.jsx";
 
 import {
     createRoutesFromElements,

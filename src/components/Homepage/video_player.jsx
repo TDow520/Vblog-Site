@@ -6,7 +6,7 @@ function VideoPlayer({ src, text }) {
     const [altText, setAltText] = useState("Play");
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
-    const [volume, setVolume] = useState(100);
+    // const [volume, setVolume] = useState(100);
 
     //calculate current time displayed as minutes: and two digit seconds
     //minutes dont go over 59
@@ -62,11 +62,11 @@ function VideoPlayer({ src, text }) {
             videoRef.current.requestFullscreen();
     };
 
-    const handleVolume = (e) => {
-        const newVolume = parseFloat(e.target.value)/100;
-        setVolume(newVolume);
-        videoRef.current.volume
-    }
+    // const handleVolume = (e) => {
+    //     const newVolume = parseFloat(e.target.value)/100;
+    //     setVolume(newVolume);
+    //     videoRef.current.volume
+    // }
 
     return (
         <div className="p-10 ">
@@ -76,7 +76,7 @@ function VideoPlayer({ src, text }) {
                 src={src}
                 onTimeUpdate={handleTimeUpdate}
                 onLoadedMetadata={handleLoadedMetadata}
-                volume={volume}
+                // volume={volume}
             />
             <div className="flex justify-between items-center">
                 <button onClick={toggleVideo}>
@@ -103,7 +103,7 @@ function VideoPlayer({ src, text }) {
                     {("0" + (Math.floor(timeRemaining / 60) - Math.floor((timeRemaining / 3600) % 60) * 60)).slice(-2)}:
                     {("0" + Math.floor(timeRemaining % 60)).slice(-2)}
                 </p>
-                <div className="volume_slider flex items-center w-auto">
+                {/* <div className="volume_slider flex items-center w-auto">
                     <input
                         type="range"
                         min="0"
@@ -117,7 +117,7 @@ function VideoPlayer({ src, text }) {
                         src="../images/audio_image.png"
                         alt="Volume"
                     />
-                </div>
+                </div> */}
                 <button onClick={toggleFullScreen}>
                     <img className="h-12 mx-3" src= "../images/full-screen-icon.png" alt="Fullscreen"/>
                 </button>
