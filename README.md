@@ -37,4 +37,4 @@ once all the dependencies are installed run this code
  npm run dev
  ```
  
- This will bring up the site on your localhost port. The video should be load in the 
+ This will bring up the site on your localhost port. The videos will be brought in later but they are too big to be hosted in github
