@@ -10,7 +10,7 @@ function Main() {
                     Now Playing
                 </h2>
                 <section className="flex justify-center">
-                    <MainVideo src="/KH_1_playthrough_(16_Final_Episode).mp4" />
+                    <MainVideo src="/public/KH_1_playthrough_(16_Final_Episode).mp4" />
                 </section>
                 <section className="bg-yellow-200">
                     {/* <section className="bg-gradient-to-t from-white via-green-900 to-white h-fit"> */}
