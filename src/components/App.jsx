@@ -2,6 +2,8 @@ import React from "react";
 import "../css/App.css";
 import Home from "./Homepage/home.jsx";
 import VideoLib from "./Library_page/vid_lib.jsx";
+import HoneeBio from "./HoneeBee_Bio/HoneeBio.jsx";
+import ButterflyBio from "./Butterfly_Bio/ButterflyBio.jsx";
 
 import {
     createRoutesFromElements,
@@ -14,6 +16,8 @@ const routes = createRoutesFromElements(
     <Route>
         <Route path="/" element={<Home />} />
         <Route path="/library" element={<VideoLib />} />
+        <Route path="/honee" element={<HoneeBio />} />
+        <Route path="/butterfly" element={<ButterflyBio />} />
     </Route>
 );
 

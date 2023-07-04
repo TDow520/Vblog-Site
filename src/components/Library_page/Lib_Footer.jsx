@@ -5,7 +5,6 @@ export default function Footer(){
     return(
         <div className="border border-green-900 text-center">
             <Copyright />
-            This is the footer
         </div>
     )
 }

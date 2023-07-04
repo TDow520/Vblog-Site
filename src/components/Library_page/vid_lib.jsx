@@ -2,15 +2,17 @@ import React from "react";
 import "./Lib.css";
 import Header from "./Lib_Header.jsx";
 import Body from "./Lib_Body.jsx";
-import Footer from "./Lib_Footer.jsx";
+import Copyright from "../Homepage/copyright";
 
 
 function VideoLib() {
     return (
-        <div>
+        <div className="bg-gray-300">
             <Header />
             <Body />
-            <Footer />
+            <footer className="text-center">
+                <Copyright />
+            </footer>
         </div>
     );
 }
