@@ -7,7 +7,7 @@ import Copyright from "../Homepage/copyright";
 
 function VideoLib() {
     return (
-        <div className="bg-gray-300">
+        <div className="">
             <Header />
             <Body />
             <footer className="text-center">

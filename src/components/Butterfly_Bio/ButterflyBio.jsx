@@ -6,7 +6,7 @@ import Copyright from "../Homepage/copyright";
 
 function ButterflyBio() {
     return (
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center border border-red-800 bg-green-200">
             <Nav />
             <div className="flex flex-col items-center justify-center">
                 <h1 className="text-4xl font-bold text-center text-gray-700">

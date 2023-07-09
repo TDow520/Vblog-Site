@@ -17,8 +17,8 @@ function Nav() {
             >
                 Dark Mode
             </button>
-            <div className="flex justify-between w-375 text-slate-100">                
-                <nav className="container flex justify-between px-1.5 mt-6 mb-6 mr-5 bg-green-300 rounded-2xl text-gray-700 ">
+            <div className="flex justify-between w-375 text-slate-100">
+                <nav className="container flex justify-between px-1.5 mt-6 mb-6 mr-5 bg-gray-500 shadow-lg shadow-gray-400 rounded-2xl text-slate-300 hover:text-slate-100">
                     <div className="hidden lg:flex">
                         {/* <a href="#" className="hover:font-bold px-1.5 m-3.5">
                             Sign-in
@@ -26,10 +26,16 @@ function Nav() {
                         <a href="/" className="hover:font-bold px-1.5 m-3.5">
                             Home
                         </a>
-                        <a href="/butterfly" className="hover:font-bold px-1.5 m-3.5">
+                        <a
+                            href="/butterfly"
+                            className="hover:font-bold px-1.5 m-3.5"
+                        >
                             Buttterfly Bio
                         </a>
-                        <a href="/honee" className="hover:font-bold px-1.5 m-3.5">
+                        <a
+                            href="/honee"
+                            className="hover:font-bold px-1.5 m-3.5"
+                        >
                             HoneeBee Bio
                         </a>
                         <a
@@ -42,28 +48,41 @@ function Nav() {
                             Contact
                         </a>
                     </div>
-                    <div className="px-1 m-2 lg:hidden" onClick={handleMenuClick}>
-                        {!showMenu ? <AiOutlineMenu size={20}/> : <AiOutlineClose size={20}/>}
+                    <div
+                        className="px-1 m-2 lg:hidden"
+                        onClick={handleMenuClick}
+                    >
+                        {!showMenu ? (
+                            <AiOutlineMenu size={20} />
+                        ) : (
+                            <AiOutlineClose size={20} />
+                        )}
                     </div>
-                    <div className={showMenu ? "fixed left-[.05%] top-[55px] w-[60%] h-full border-l border-l-gray-900 bg-green-300 rounded-[2%] ease-in-out duration-500 z-[1]" : "fixed left-[-90%]"}>
+                    <div
+                        className={
+                            showMenu
+                                ? "fixed left-[.05%] top-[55px] w-[60%] h-full border-l border-l-gray-900 bg-gray-500 shadow-lg shadow-white rounded-[2%] ease-in-out duration-500 z-[1]"
+                                : "fixed left-[-90%]"
+                        }
+                    >
                         <ul className="uppercase p-10">
                             {/* <li className="p-4 border-b border-gray-700 hover:font-bold">
                                 <Link to ={`/`}>Sign-in</Link>
                             </li> */}
-                            <li className="p-4 border-b border-gray-700 hover:font-bold">
-                                <Link to ={`/`}>Home</Link>
+                            <li className="p-4 border-b border-gray-700 hover:font-bold hover:text-slate-100">
+                                <Link to={`/`}>Home</Link>
                             </li>
-                            <li className="p-4 border-b border-gray-700 hover:font-bold">
-                                <Link to ={`/butterfly`}>Butterfly Bio</Link>
+                            <li className="p-4 border-b border-gray-700 hover:font-bold hover:text-slate-100">
+                                <Link to={`/butterfly`}>Butterfly Bio</Link>
                             </li>
-                            <li className="p-4 border-b border-gray-700 hover:font-bold">
-                                <Link to ={`/honee`}>HoneeBee Bio</Link>
+                            <li className="p-4 border-b border-gray-700 hover:font-bold hover:text-slate-100">
+                                <Link to={`/honee`}>HoneeBee Bio</Link>
                             </li>
-                            <li className="p-4 border-b border-gray-700 hover:font-bold">
-                                <Link to ={`/library`}>Video Library</Link>
+                            <li className="p-4 border-b border-gray-700 hover:font-bold hover:text-slate-100">
+                                <Link to={`/library`}>Video Library</Link>
                             </li>
                             <li className="p-4 hover:font-bold">
-                                <Link to ={`/library`}>Contact</Link>
+                                <Link to={`/library`}>Contact</Link>
                             </li>
                         </ul>
                     </div>
