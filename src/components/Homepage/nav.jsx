@@ -18,7 +18,7 @@ function Nav() {
                 Dark Mode
             </button>
             <div className="flex justify-between w-375 text-slate-100">
-                <nav className="container flex justify-between px-1.5 mt-6 mb-6 mr-5 bg-gray-500 shadow-lg shadow-gray-400 rounded-2xl text-slate-300 hover:text-slate-100">
+                <nav className="container flex justify-between px-1.5 mt-6 mb-6 mr-5 bg-gray-500 shadow-lg shadow-gray-400 rounded-2xl text-slate-300 hover:text-slate-100 ml-2">
                     <div className="hidden lg:flex">
                         {/* <a href="#" className="hover:font-bold px-1.5 m-3.5">
                             Sign-in
@@ -44,7 +44,7 @@ function Nav() {
                         >
                             Video Lib
                         </a>
-                        <a href="#" className="hover:font-bold px-1.5 m-3.5">
+                        <a href="/contact" className="hover:font-bold px-1.5 m-3.5">
                             Contact
                         </a>
                     </div>
@@ -61,11 +61,11 @@ function Nav() {
                     <div
                         className={
                             showMenu
-                                ? "fixed left-[.05%] top-[55px] w-[60%] h-full border-l border-l-gray-900 bg-gray-500 shadow-lg shadow-white rounded-[2%] ease-in-out duration-500 z-[1]"
+                                ? "fixed left-[.05%] top-[55px] w-[60%] h-full border-l border-l-gray-900 bg-gray-500 shadow-lg shadow-white rounded-[2%] ease-in-out duration-500 z-[1] ml-2"
                                 : "fixed left-[-90%]"
                         }
                     >
-                        <ul className="uppercase p-10">
+                        <ul className="uppercase p-10 ml-2">
                             {/* <li className="p-4 border-b border-gray-700 hover:font-bold">
                                 <Link to ={`/`}>Sign-in</Link>
                             </li> */}
@@ -82,7 +82,7 @@ function Nav() {
                                 <Link to={`/library`}>Video Library</Link>
                             </li>
                             <li className="p-4 hover:font-bold">
-                                <Link to={`/library`}>Contact</Link>
+                                <Link to={`/contact`}>Contact</Link>
                             </li>
                         </ul>
                     </div>
